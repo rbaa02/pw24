@@ -1,0 +1,98 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Thoma, sans-serif;
+}
+
+body{
+    background-color: #f4fff9;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    background-color: #d5f3e5;
+    min-height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header img {
+    height: 50px;
+}
+
+ul,li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  background-color: #a7ce9c;
+  border-radius: 10%;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 20px;
+}
+
+.menu li a{
+    padding: 5px;
+    text-decoration: none;
+    color: green;
+}
+
+footer{
+    background-color: #d5f3e5;
+    display: flex;
+    justify-content: center;
+    color: green;
+    min-height:50px;
+    margin-top: auto;
+    padding: 10px;
+}
+
+section{
+    display: block;
+    margin: 0 auto;
+    width: 50vh;
+}
+
+section div.imagens {
+    padding-top: 3vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0;
+    justify-content: center;
+}
+
+section h1{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+section div img{
+    max-width: 30vh;
+    height: 20vh;
+    margin: 8vh;
+    margin-bottom: 0;
+}
+
+section div p{
+    display: flex;
+    justify-content: center;
+}
