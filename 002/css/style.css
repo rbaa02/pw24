@@ -1,6 +1,4 @@
-
 *{
-
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -16,8 +14,8 @@ body{
 
 header{
     background-color: #d5f3e5;
-    height:50px;
     display: flex;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
