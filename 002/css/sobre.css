@@ -64,35 +64,18 @@ footer{
     padding: 10px;
 }
 
-section{
-    display: block;
-    margin: 0 auto;
-    width: 50vh;
+.sobre {
+    width: 400px;
+    margin: 35px auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section div.imagens {
-    padding-top: 3vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin: 0;
-    justify-content: center;
-}
-
-section h1{
-    padding-top: 10vh;
-    display: flex;
-    justify-content: center;
-}
-
-section div img{
-    max-width: 30vh;
-    height: 20vh;
-    margin: 8vh;
-    margin-bottom: 0;
-}
-
-section div p{
+h1{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     display: flex;
     justify-content: center;
 }
