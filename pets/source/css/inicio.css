@@ -59,7 +59,7 @@ nav b {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    height: 30em;
+    height: calc(90em - 130vh);
 }
 .animais .animal {
     margin: 2vh;
