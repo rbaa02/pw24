@@ -1,0 +1,70 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+form{ 
+    width: 360px;
+    height: 890px;
+    margin: 10px auto 10px auto;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    background-color: #F3F7F8;
+}
+p{
+    margin-bottom: 0.2vh;
+}
+a{
+    margin: 5px;
+}
+.button {
+    background-color: rgb(166, 82, 192);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 60%;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.button:hover {
+    background-color: rgb(117, 47, 117);
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 7vh;
+}
+.logo{
+    scale: 1.3;
+    width: 150px;
+    height: 150px;
+}
+.input-text{
+    border: none;
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 15px;
+    height: auto;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    width: 93%;
+    height: 1.5vh;
+    border-radius: 30px;
+}
+.btn{
+    margin-top: 9vh;
+    margin-bottom: 15vh;
+    display: flex;
+    justify-content: center;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
