@@ -54,8 +54,14 @@ nav b {
     background-color: #8e4bb5;
     color: white;
 }
+.animais{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 90vh;
+}
 .animais .animal {
-    margin: 3vh 2vh 3vh 2vh;
+    margin: 2vh;
     background-color: #e1c9f0;
     display: flex;
     padding: 20px;
