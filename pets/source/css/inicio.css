@@ -5,7 +5,7 @@ body{
     width: 93%;
     height: 93%;
     margin: 10px auto 10px auto;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 10px 5px 10px;
     border-radius: 8px;
     background-color: #F3F7F8;
 }
@@ -59,7 +59,7 @@ nav b {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    height: calc(90em - 130vh);
+    height: calc(100em - 130vh);
 }
 .animais .animal {
     margin: 2vh;
