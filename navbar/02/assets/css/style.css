@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --color1: #d4c0de;
+    --color2: #d8afcf;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #ffffeb;
+}
+nav{
+    height: 60px;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0px 3px 10px var(--color2);
+}
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+h1{
+    /* position: relative; */
+    margin-left: 20px; 
+}
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    background-color: var(--color2);
+}
+nav .ad{
+    margin-right: auto;
+    margin-left: 10px;
+}
+nav svg{
+    fill: white;
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+@media(max-width: 450px){
+    .links-container{
+        flex-direction: column;
+        align-items: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -140%;
+        z-index: 10;
+        width: 200px;
+
+        background-color: var(--color1);
+        box-shadow: -3px 0 10px var(--color2);
+        transition: 0.55s ease-out;
+    }
+    h1{
+        position: absolute;
+        left: 0;
+    }
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    .open-sidebar-button, .close-sidebar-button{
+        padding: 20px;
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+    }
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width   : 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
+/* PETS */
+.animais{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+}
+.animais .animal {
+    box-shadow: 0px 3px 10px var(--color2);
+    margin: 2vh;
+    background-color: #e1c9f0;
+    display: flex;
+    width: 230px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.animais .animal img{
+    width: 12vh;
+    height: 12vh;
+}
+.animais .animal div{
+    margin-top: -20px;
+    margin-left: 2vh;
+}
