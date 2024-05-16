@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Adoção</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="inicio.html" class="active">Início</a>
+                </li>
+                <li>
+                    <a href="ajuda.html">Ajuda</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="perfil.html">Perfil</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <label for="nav_check" class="hamburguer">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label> -->
+    </header>
+
+    
+    <div class="container">
+        <section>
+            <h1>Cadastrar animais para adoção</h1>
+            <div class="botao_pets">
+                <ul>
+                    <li class="btn_tipo" id="clicked" onclick="change(0)"><b>GATO</b></li>
+                    <li class="btn_tipo" onclick="change(1)"><b>CACHORRO</b></li>
+                </ul>
+            </div>
+
+            <div class="img_insert">
+                <input type="file" id="file" accept="image/*" hidden>
+                <div class="img-area" data-img="">
+                    <i class='bx bxs-cloud-upload icon'></i>
+                    <h3>Foto do animal</h3>
+                    <p>O tamanho da imagem precisa ser menor que  <span>5MB</span></p>
+                </div>
+                <button class="select-image">Selecionar imagem</button>
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
