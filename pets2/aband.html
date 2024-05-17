@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Adoção</title>
+    <title>Cadastro Perdido</title>
     <link rel="stylesheet" href="assets/css/base.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <script src="assets/js/index.js" defer></script>
@@ -36,19 +36,29 @@
             <div></div>
         </label>
     </header>
-
     
-    <div class="container" id="c2">
+    <div class="container">
         <section>
             <form action="">
 
-                <h1>Cadastrar animais para adoção</h1>
+                <h1>Cadastrar animal perdido</h1>
                 <hr>
-                <div class="botao_pets">
+                <!-- <div class="botao_pets">
                     <ul>
                         <li class="btn_tipo" id="clicked" onclick="change(0)"><b>GATO</b></li>
                         <li class="btn_tipo" onclick="change(1)"><b>CACHORRO</b></li>
                     </ul>
+                </div> -->
+                <div class="radio-input">
+                    <label>
+                    <input type="radio" id="value-1" name="value-radio" value="value-1">
+                    <span>Option 1</span>
+                    </label>
+                    <label>
+                      <input type="radio" id="value-2" name="value-radio" value="value-2">
+                    <span>Option 2</span>
+                    </label>
+                    <span class="selection"></span>
                 </div>
     
                 <div class="img_insert">
@@ -65,54 +75,30 @@
                     <input type="text" id="input" required class="nome">
                     <label for="input" class="label">Nome do animal</label>
                     <div class="underline" id="input_under"></div>
-                </div>
-    
-                <div class="radio-button-container">
-                    <div class="radio-button">
-                        <input type="radio" class="radio-button__input" id="radio1" name="radio-group">
-                        <label class="radio-button__label" for="radio1" id="macho">
-                        <span class="radio-button__custom"></span>
-                        Macho
-                        </label>
-                    </div>
-                    <div class="radio-button">
-                        <input type="radio" class="radio-button__input" id="radio2" name="radio-group">
-                        <label class="radio-button__label" for="radio2" id="femea">
-                        <span class="radio-button__custom"></span>
-                        Fêmea
-                        </label>
-                    </div>
-                </div>
-    
-                <div class="input-container">
-                    <input type="number" id="input" required class="peso" min="0">
-                    <label for="input" class="label">Peso do animal (kg)</label>
-                    <div class="underline" id="input_under"></div>
-                </div>
-    
-                <div class="input-container">
-                    <input type="number" id="input" required class="tamanho" min="0">
-                    <label for="input" class="label">Tamanho do animal (cm)</label>
-                    <div class="underline" id="input_under"></div>
-                </div>
-    
-                <div class="input-container">
-                    <input type="number" id="input" required class="raca" min="0">
-                    <label for="input" class="label">Raça do animal</label>
-                    <div class="underline" id="input_under"></div>
-                </div>
-    
+                </div>                
+                
                 <div class="input-container">
                     <textarea id="text" required></textarea>
                     <label for="text" class="label">Descrição do animal</label>
                     <div class="underline" id="tarea"></div>
                 </div>
+                <div class="input-container">
+                    <input type="text" id="input" required class="nome">
+                    <label for="input" class="label">Última localização</label>
+                    <div class="underline" id="input_under"></div>
+                </div>                
+                <div class="input-container">
+                    <input type="text" id="input" required class="nome">
+                    <label for="input" class="label">Forma de contato</label>
+                    <div class="underline" id="input_under"></div>
+                </div>                
                 <div class="btn_cad">
                     <button class="cadastrar" type="submit"><b>Cadastrar</b></button>
                 </div>
             </form>
         </section>
     </div>
+
     <footer>
         <h3>&copy Todos Direitos Reservados</h3>
     </footer>
