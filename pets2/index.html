@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Adoção</title>
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/index.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <script src="assets/js/index.js" defer></script>
 </head>
 <body>
@@ -62,7 +62,7 @@
             <div class="input-container">
                 <input type="text" id="input" required class="nome">
                 <label for="input" class="label">Nome do animal</label>
-                <div class="underline"></div>
+                <div class="underline" id="input_under"></div>
             </div>
 
             <div class="radio-button-container">
@@ -85,22 +85,29 @@
             <div class="input-container">
                 <input type="number" id="input" required class="peso" min="0">
                 <label for="input" class="label">Peso do animal (kg)</label>
-                <div class="underline"></div>
+                <div class="underline" id="input_under"></div>
             </div>
 
             <div class="input-container">
                 <input type="number" id="input" required class="tamanho" min="0">
                 <label for="input" class="label">Tamanho do animal (cm)</label>
-                <div class="underline"></div>
+                <div class="underline" id="input_under"></div>
             </div>
 
             <div class="input-container">
                 <input type="number" id="input" required class="raca" min="0">
                 <label for="input" class="label">Raça do animal (cm)</label>
-                <div class="underline"></div>
+                <div class="underline" id="input_under"></div>
             </div>
 
-            <textarea id="my-text" placeholder="Descrição do pet"></textarea>
+            <div class="input-container">
+                <textarea id="text" required></textarea>
+                <label for="text" class="label">Descrição do animal</label>
+                <div class="underline" id="tarea"></div>
+            </div>
+            <div class="btn_cad">
+                <button class="cadastrar">Cadastrar</button>
+            </div>
         </section>
     </div>
 </body>
