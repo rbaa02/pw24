@@ -240,7 +240,7 @@ button.select-image:hover {
     font-size: 16px;
     color: #333;
 }
-.input-container #input_under{
+.input-container #input_under, #tarea{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -250,8 +250,8 @@ button.select-image:hover {
     transform: scaleX(0);
     transition: all 0.3s ease;
 }
-.input-container #tarea2{
-    margin-bottom: 21.8vh;
+.input-container #tarea{
+    bottom: .4vh;
 }
 
 .input-container textarea:focus ~ #tarea, .input-container textarea:focus ~ #tarea2, .input-container input[type="text"]:focus ~ #input_under, .input-container input[type="number"]:focus ~ #input_under,
@@ -285,7 +285,7 @@ button.select-image:hover {
     margin-bottom: 10px;
     position: relative;
     font-size: 15px;
-    color: #999;
+    color: #838999;
     font-weight: 600;
     cursor: pointer;
     text-transform: uppercase;
@@ -362,6 +362,20 @@ button.select-image:hover {
   
 .cadastrar:active {
     transform: translateY(-1px);
+}
+
+/* FOOTER */
+footer{
+    width: 80%;
+    height: 70px;
+    background: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+    color: #838999;
 }
     
 /* RESPONSIVIDADE NAVBAR (AJEITAR) */
