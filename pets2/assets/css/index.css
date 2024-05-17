@@ -50,6 +50,23 @@ nav ul li a:active {
     background: #675cff;
     color: #fff;
 }
+.mn {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.mn:hover {
+    background: #f6f4ff;
+}
+.mn div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #212526;
+}
 
 /* SECTION */
 .container{
@@ -57,6 +74,7 @@ nav ul li a:active {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin-top: 20vh;
 }
 .container section{
     background-color: #fff;
@@ -99,6 +117,7 @@ hr{
 }
 .botao_pets ul li:hover{
     cursor: pointer;
+    width: 17vh;
     transition: all .5s ease;
     background-color: #eef0f7;
     /* color: white; */
@@ -115,17 +134,15 @@ hr{
 
 /* UPLOAD IMAGEM */
 .img_insert {
-	max-width: 400px;
-	width: 100%;
-	background: #fff;
+	width: 55vh;
 	padding: 30px;
 	border-radius: 30px;
 }
 .img-area {
     color: #838999;
 	position: relative;
-	width: 100%;
-	height: 240px;
+	width: 55vh;
+	height: 35vh;
 	background: #f2f2f2;
 	margin-bottom: 30px;
 	border-radius: 15px;
@@ -178,4 +195,167 @@ hr{
 }
 .select-image:hover {
 	background: #a3a9c0;
+}
+
+/* INPUT TEXT */
+.input-container {
+    position: relative;
+    margin-left: 4vh;    
+    margin-top: 5vh;
+}
+.input-container input[type="text"],.input-container input[type="number"] {
+    font-size: 20px;
+    width: 55vh;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+.input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+.input-container input[type="text"]:focus ~ .label, .input-container input[type="number"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label, .input-container input[type="number"]:valid ~ .label {
+    top: -20px;
+    font-size: 16px;
+    color: #333;
+}
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 55vh;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+.input-container input[type="text"]:focus ~ .underline, .input-container input[type="number"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline, .input-container input[type="number"]:valid ~ .underline {
+    transform: scaleX(1);
+}
+
+/* MACHO OU FEMEA */
+.radio-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 5vh;
+}  
+.radio-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+} 
+.radio-button__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}  
+.radio-button__label {
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 15px;
+    color: #999;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}  
+.radio-button__custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    transition: all 0.3s ease;
+}  
+.radio-button__input:checked + #macho .radio-button__custom {
+    background-color: #4c8bf5;
+    border-color: transparent;
+    transform: scale(0.8);
+    box-shadow: 0 0 20px #4c8bf580;
+}
+.radio-button__input:checked + #femea .radio-button__custom {
+    background-color: #f54cd6;
+    border-color: transparent;
+    transform: scale(0.8);
+    box-shadow: 0 0 20px #f54cd380;
+}
+.radio-button__input:checked + #macho {
+    color: #4c8bf5;
+} 
+.radio-button__input:checked + #femea {
+    color: #f54cd6;
+} 
+#macho:hover .radio-button__custom{
+    transform: scale(1.2);
+    border-color: #4c8bf5;
+    box-shadow: 0 0 20px #4c8bf580;
+}
+#femea:hover .radio-button__custom{
+    transform: scale(1.2);
+    border-color: #f54cd6;
+    box-shadow: 0 0 20px #f54cd380;
+}
+  
+  
+  
+  
+  
+  
+
+@media only screen and (max-width: 900px) {
+    header {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    nav {
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background-color: #fefefe;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    #nav_check:checked~nav {
+        left: 0;
+    }
+
+    nav .logo {
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    nav ul li a {
+        margin-bottom: 5px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    nav ul {
+        display: block;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
 }
