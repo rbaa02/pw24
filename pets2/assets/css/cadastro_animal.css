@@ -7,37 +7,35 @@
     list-style: none;
     text-decoration: none;
 }
-body {
-    background: #e3e9f7;
+body{
+    background-color: #e3e9f7;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
 }
 
 /* NAVBAR - GERAL*/
-header {
-    height: 100%;
+header{
+    width: 80%;
+    height: 70px;
     background: #fefefe;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .5vh 3vh;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
     margin: 0 auto;
 }
-.logo {
-    width: 90px;
-    border-radius: 20px;
-    margin: 8px 0;
+.logo{
+    width: 120px;
+    margin-top: 8px;
 }
-.logo img {
-    border-radius: 50px;
-    width: 70px;
-}
-nav .logo {
+nav .logo{
     display: none;
 }
 nav ul {
     display: flex;
 }
 nav ul li a {
-    color: #212526;
+    color: #838999;
     display: block;
     margin: 0 2px;
     font-weight: 600;
@@ -49,10 +47,10 @@ nav ul li a:hover {
     background: #f6f4ff;
 }
 nav ul li a:active {
-    background-color: #eef0f7;
+    background: #675cff;
     color: #fff;
 }
-.bg {
+.mn {
     display: none;
     height: fit-content;
     cursor: pointer;
@@ -60,10 +58,10 @@ nav ul li a:active {
     border-radius: 5px;
     transition: 0.2s;
 }
-.bg:hover {
+.mn:hover {
     background: #f6f4ff;
 }
-.bg div {
+.mn div {
     width: 30px;
     height: 2px;
     margin: 6px 0;
@@ -75,11 +73,12 @@ nav ul li a:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 26vh 0;
+    height: 98vh;
+    margin: 34.3vh 0;
 }
-#c2{
-    margin: 35.5vh 0;
+.container2{
+    height: 98vh;
+    margin: 25vh 0;
 }
 .container section{
     background-color: #fff;
@@ -99,58 +98,6 @@ hr{
 }
 
 /* SECTION - BOTAO PETS */
-.radio-input input {
-    display: none;
-}  
-.radio-input {
-    width: 300px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: #fff;
-    color: #000000;
-    /* width: var(--czontainer_width); */
-    overflow: hidden;
-    border: 1px solid rgba(53, 52, 52, 0.226);
-} 
-.radio-input label {
-    width: 100%;
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    font-weight: 600;
-    letter-spacing: -1px;
-    font-size: 14px;
-} 
-.selection {
-    display: none;
-    position: absolute;
-    height: 100%;
-    width: 22vh;
-    /* width: 50%; */
-    z-index: 0;
-    left: 0;
-    top: 0;
-    transition: .15s ease;
-} 
-.radio-input label:has(input:checked) {
-    color: #fff;
-} 
-.radio-input label:has(input:checked) ~ .selection {
-    background-color: rgb(11 117 223);
-    display: inline-block;
-} 
-.radio-input label:nth-child(1):has(input:checked) ~ .selection {
-    transform: translateX(22vh * 0/2);
-} 
-.radio-input label:nth-child(2):has(input:checked) ~ .selection {
-    transform: translateX(22vh * 1/2);
-}
 .botao_pets{
     padding-top: 2vh;
     display: flex;
@@ -177,6 +124,7 @@ hr{
     width: 17vh;
     transition: all .5s ease;
     background-color: #eef0f7;
+    /* color: white; */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
 }
 .botao_pets ul #clicked{
@@ -309,6 +257,7 @@ button.select-image:hover {
 .input-container #tarea{
     bottom: .4vh;
 }
+
 .input-container textarea:focus ~ #tarea, .input-container textarea:focus ~ #tarea2, .input-container input[type="text"]:focus ~ #input_under, .input-container input[type="number"]:focus ~ #input_under,
 .input-container textarea:valid ~ #tarea, .input-container textarea:valid ~ #tarea2, .input-container input[type="text"]:valid ~ #input_under, .input-container input[type="number"]:valid ~ #input_under {
     transform: scaleX(1);
@@ -407,12 +356,14 @@ button.select-image:hover {
     cursor: pointer;
     outline: none;
 }
+  
 .cadastrar:hover {
     background: #a3a9c0;
     box-shadow: 0px 15px 20px rgba(171, 151, 241, 0.4);
     color: #fff;
     transform: translateY(-7px);
-} 
+}
+  
 .cadastrar:active {
     transform: translateY(-1px);
 }
@@ -437,6 +388,7 @@ footer{
         width: 100%;
         padding: 0 20px;
     }
+
     nav {
         position: absolute;
         left: -300px;
@@ -448,9 +400,11 @@ footer{
         transition: 0.2s;
         box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
     }
+
     #nav_check:checked~nav {
         left: 0;
     }
+
     nav .logo {
         display: block;
         height: 70px;
@@ -458,21 +412,19 @@ footer{
         align-items: center;
         margin-left: 30px;
     }
+
     nav ul li a {
         margin-bottom: 5px;
         padding: 10px 15px;
         border-radius: 5px;
     }
+
     nav ul {
         display: block;
         padding: 0 20px;
         margin-top: 30px;
     }
-<<<<<<<< HEAD:pets2/assets/css/base.css
-    .bg {
-========
     .mn{
->>>>>>>> dda99c4bb9ac2e6c84d2bd3ba4ff0064dfbf6ff3:pets2/assets/css/cadastro_animal.css
         display: block;
     }
 }
