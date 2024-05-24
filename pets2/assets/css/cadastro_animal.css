@@ -67,7 +67,7 @@ nav ul li a:active {
     width: 30px;
     height: 2px;
     margin: 6px 0;
-    background: #212526;
+    background: #838999;
 }
 
 /* SECTION - GERAL */
@@ -468,7 +468,11 @@ footer{
         padding: 0 20px;
         margin-top: 30px;
     }
+<<<<<<<< HEAD:pets2/assets/css/base.css
     .bg {
+========
+    .mn{
+>>>>>>>> dda99c4bb9ac2e6c84d2bd3ba4ff0064dfbf6ff3:pets2/assets/css/cadastro_animal.css
         display: block;
     }
 }
